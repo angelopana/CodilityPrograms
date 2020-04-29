@@ -35,17 +35,13 @@ func backspaceCompare(S string, T string) bool {
 	s1 = addToStack(S)
 	s2 = addToStack(T)
 
-	fmt.Println(string(s2))
-
 	if string(s1) == string(s2) {
 		return true
 	}
-
 	return false
 }
 
 func addToStack(s string) []rune {
-
 	var stack []rune
 	for _, j := range s {
 		if j == '#' {
